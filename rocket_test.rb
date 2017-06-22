@@ -29,6 +29,31 @@ class RocketTest < Minitest::Test
 
   end
 
+  def test_colour_returns_random_colour
+
+    #arrange
+    rocket = Rocket.new
+
+    #act
+    colour = rocket.colour
+
+    #assert
+    assert colour != nil
+
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
