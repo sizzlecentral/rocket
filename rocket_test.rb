@@ -77,11 +77,23 @@ class RocketTest < Minitest::Test
     grounded = rocket.lift_off
 
     #assert
-    assert grounded == true 
+    assert grounded == true
 
   end
 
+  def test_if_rocket_has_lifted_off
 
+    #arrange
+    rocket = Rocket.new
+    @flying = true
+
+    #act
+    aloft = rocket.lift_off
+
+    #assert
+    assert aloft == true 
+
+  end
 
 
 
