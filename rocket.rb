@@ -25,6 +25,10 @@ class Rocket
     @flying
   end
 
+  def flying=(state)
+    @flying = state
+  end
+
   def lift_off
     if flying?
       return false
