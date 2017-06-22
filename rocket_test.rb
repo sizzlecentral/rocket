@@ -16,6 +16,18 @@ class RocketTest < Minitest::Test
 
   end
 
+  def test_name_returns_chosen_name
+
+    #arrange
+    rocket = Rocket.new
+
+    #act
+    name = rocket.name=('Bob')
+
+    #assert
+    assert_equal('Bob', name)
+
+  end
 
 
 
