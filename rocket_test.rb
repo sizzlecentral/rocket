@@ -42,7 +42,18 @@ class RocketTest < Minitest::Test
 
   end
 
+  def test_colour_returns_chosen_colour
 
+    #arrange
+    rocket = Rocket.new
+
+    #act
+    colour = rocket.colour=('Blue')
+
+    #assert
+    assert_equal(colour, 'Blue')
+
+  end
 
 
 
