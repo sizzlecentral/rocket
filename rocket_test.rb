@@ -55,6 +55,18 @@ class RocketTest < Minitest::Test
 
   end
 
+  def test_rocket_default_not_flying
+
+    #arrange
+    rocket = Rocket.new
+
+    #act
+    aloft = rocket.flying?
+
+    #assert
+    assert aloft == false
+
+  end
 
 
 
